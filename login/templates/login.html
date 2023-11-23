@@ -220,15 +220,18 @@
         />
         <div class="div-5">Login</div>
         <div class="div-6">Welcome to hanyang Univ. Hospital EMR System</div>
-        <form id="login" class="div-7">
-          <label for="username" class="div-8">Doctor ID:</label>
-          <input type="text" id="username" name="username" required>
-          <div class="divider-line"></div>
-          <label for="password" class="div-11">Password:</label>
-          <input type="password" id="password" name="password" required>
-          <div class="divider-line"></div>
-          <input type="submit" value="Login" class="div-14">
-        </form>
+    </div>
+    <form action="login/" method="post" id="login" class="div-7">
+        {% csrf_token %}
+        <label for="username" class="div-8">Doctor ID:</label>
+        <input type="text" id="username" name="username" required>
+        <div class="divider-line"></div>
+        <label for="password" class="div-11">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div class="divider-line"></div>
+        <input type="submit" value="Login" class="div-14">
+    </div> 
+      
 
 
     <div class = "div-13">
