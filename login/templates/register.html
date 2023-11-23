@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RESISTER</title>
+</head>
+<body>
+    <h1>WELCOME TO HANYANG HOSPITAL</h1>
+    <form action="{% url 'register' %}" method="post">
+        {% csrf_token %}
+        <label for="username">DOCTOR ID：</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">PASSWORD：</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="提交">
+    </form>
+</body> 
+</html>
+
